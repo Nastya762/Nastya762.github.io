@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/fonts.css"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My profile</title>
+  </head>
+  <body>
+    <header class="header container"> 
+  <ul class="header__nav">
+    <li class="nav__item">
+      <a href="/" class="nav__link nav__link_active">Home</a>
+    </li>
+    <li class="nav__item">
+      <a href="../../pages/blog/index.html" class="nav__link">My blog</a>
+    </li>
+    <li class="nav__item">
+      <button type="button" class="nav__button_js nav__link ">Sign in</button>
+    </li>
+    <li class="nav__item">
+      <button class="nav__btn_js nav__link">Register</button>
+    </li>
+    <li class="nav__item">
+      <a href="../../pages/profile/index.html" class="nav__link nav__link_js visually-hidden">My profile</a>
+    </li>
+  </ul>
+  <button class="header__btn-mobile">
+    <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect y="6.10352e-05" width="32" height="4" rx="2" fill="#070707"/>
+      <rect y="8.00006" width="32" height="4" rx="2" fill="#070707"/>
+      <rect y="16.0001" width="32" height="4" rx="2" fill="#070707"/>
+    </svg>      
+  </button>
+
+
+
+  
+  <div class="mobile-header">
+   
+       
+    <div class="mobile-header__container">
+      <button type="button" class="mobile-header__btn_close">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3.37256" width="32" height="4" rx="2" transform="rotate(45 3.37256 0)" fill="#070707"/>
+          <rect x="0.543945" y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0.543945 22.6289)" fill="#070707"/>
+          </svg>          
+      </button>
+      <ul class="mobile-header__nav">
+        <li class="nav__item">
+          <a href="/" class="nav__link nav__link_active">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="../../pages/blog/index.html" class="nav__link">My blog</a>
+        </li>
+        <li class="nav__item">
+          <button class="nav__button_js nav__link ">Sign in</button>
+        </li>
+        <li class="nav__item">
+          <button class="nav__btn_js nav__link">Register</button>
+          </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <div class="container">
+        <section class="profile">
+          <h2 class="profile__title">My profile</h2>
+          <div class="profile__data">
+            <img class="profile__img_js" src="/static/images/no-photo.jpg" alt="profile picture of the owner">
+            <div class="profile__wrapper">
+              <div class="profile__wrap">
+                <p class="profile__desc">Name:</p>
+                <p class="profile__text">Oksana</p>
+              </div>
+              <div class="profile__wrap">
+                <p class="profile__desc">Surname:</p>
+                <p class="profile__text">Larioshkina</p>
+              </div>
+              <div class="profile__wrap">
+                <p class="profile__desc">Email:</p>
+                <p class="profile__text">larioshkina@gmail.com</p>
+              </div>
+              <div class="profile__wrap">
+                <p class="profile__desc">Password:</p>
+                <p class="profile__text">**********</p>
+              </div>
+              <div class="profile__wrap">
+                <p class="profile__desc">Location:</p>
+                <p class="profile__text">Tolyatti</p>
+              </div>
+              <div class="profile__wrap">
+                <p class="profile__desc">Age:</p>
+                <p class="profile__text">23</p>
+              </div>
+                <button type="button" class="profile__button btn_js">Change password</button>
+                <button type="button" class="profile__button profile__button_js">Change other data</button>
+                <button type="button" class="profile__button">Delete account</button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer container">
+    <h1 class="footer__title">Contacts</h1>
+    <p class="footer__desc">Want to know more or just chat? 
+      You are welcome!</p>
+      <button class="footer__button footer__button_js">Send message</button>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">Instagram</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">Vk</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">Telegram</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">Mail</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">GitHub</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">Phone</a>
+        </li>
+      </ul>
+      <div class="footer__wrap">
+        <p class="footer__text">Design by</p>
+        <a href="#" class="footer__link footer__text">DL Academy</a>
+      </div>
+      <p class="footer__text">Program code from Antonina</p>
+</footer>
+
+      <div class="password__overlay"></div>
+<section class="password">
+    <h2 class="visualy-hidden">Sign In</h2>
+    <button type="button" class="password__btn">
+        <svg class="password__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282"/>
+            <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
+        </svg>  
+    </button>
+    <form name="password" action="https://echo.htmlacademy.ru" method="POST" class="password__form">
+       <fieldset class="form__fieldset">
+        <div class="form__wrapper">
+    </form>
+            <input name="password" type="password" id="old-password" class="form__input">
+            <label for="old-password" class="form__label">Old password *</label> 
+        </div>
+        <div class="form__wrapper">
+            <input name="newPassword" type="password" id="new-password" class="form__input">
+            <label for="new-password" class="form__label">New password *</label> 
+        </div>
+        <div class="form__wrapper">
+            <input name="repaetPassword" type="password" id="repeat-password" class="form__input">
+            <label for="repeat-password" class="form__label">Repeat new password *</label> 
+        </div>
+        <button type="submit" class="form__button">Change password</button>
+       </fieldset>
+        
+    </form>
+
+</section> 
+      <div class="data__overlay hidden"></div> 
+<section class="data hidden">
+    <h2 class="visualy-hidden">data</h2>
+    <button type="button" class="data__btn">
+        <svg class="data__svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.82861" width="32" height="4" rx="2" transform="rotate(45 2.82861 0)" fill="#828282"/>
+            <rect y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0 22.6289)" fill="#828282"/>
+        </svg>  
+    </button>
+    <form name="editingForm" action="https://echo.htmlacademy.ru" method="POST" class="data__form">
+        <fieldset class="form__fieldset">
+            <div class="form__wrapper">
+                <input type="email" id="email-input" class="form__input">
+                <label for="email-input" class="form__input">Email</label>
+            </div>
+            <div class="form__field">
+                <div class="form__wrapper">
+                    <input type="text" id="name-input" class="form__input">
+                    <label for="name-input" class="form__input">Name</label>
+                </div>
+                <div class="form__wrapper">
+                    <input type="text" id="surname-input" class="form__input">
+                    <label for="surname-input" class="form__label">Surname</label>
+                </div>
+            </div>
+            <div class="form__field">
+                <div class="form__wrapper">
+                    <input type="password" id="password-input" class="form__input">
+                    <label for="password-input" class="form__input">Password</label>
+                </div>
+                <div class="form__wrapper">
+                    <input type="password" id="repeat-password-input" class="form__input">
+                    <label for="repeat-password-input" class="form__input">Repaet password</label>
+                </div>
+            </div>
+            <div class="form__field">
+                <div class="form__wrapper">
+                    <input type="text" id="location-input" class="form__input">
+                    <label for="location-input" class="form__input">Location</label>
+                </div>
+                <div class="form__wrapper">
+                    <input type="number" id="age-input" class="form__input">
+                    <label for="age-input" class="form__input">Age</label>
+                </div>
+            </div>
+            <div class="form__wrapper">
+                <input type="file" id="picture" class="form__input visualy-hidden">
+                <label for="picture" class="form__label">Profile picture</label>
+            </div>
+            <button type="submit" class="form__button">Submit changes</button>
+        </fieldset>
+    </form>
+</section>  
+      <button class="button-to-top button-to-top_hidden" type="button">
+    <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.300781" y="12.5786" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300781 12.5786)" fill="#070707"/>
+        <rect x="21.5801" y="14.7" width="16.5512" height="3" rx="1.5" transform="rotate(-135 21.5801 14.7)" fill="#070707"/>
+    </svg>    
+</button>
+      <script src="../common.js"></script>
+      <script src="index.js"></script>
+    </body>
+  </html>
+      

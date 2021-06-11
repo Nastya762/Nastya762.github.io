@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/fonts.css"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My blog</title>
+  </head>
+  <body>
+    <header class="header container"> 
+  <ul class="header__nav">
+    <li class="nav__item">
+      <a href="/" class="nav__link nav__link_active">Home</a>
+    </li>
+    <li class="nav__item">
+      <a href="../../pages/blog/index.html" class="nav__link">My blog</a>
+    </li>
+    <li class="nav__item">
+      <button type="button" class="nav__button_js nav__link ">Sign in</button>
+    </li>
+    <li class="nav__item">
+      <button class="nav__btn_js nav__link">Register</button>
+    </li>
+    <li class="nav__item">
+      <a href="../../pages/profile/index.html" class="nav__link nav__link_js visually-hidden">My profile</a>
+    </li>
+  </ul>
+  <button class="header__btn-mobile">
+    <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect y="6.10352e-05" width="32" height="4" rx="2" fill="#070707"/>
+      <rect y="8.00006" width="32" height="4" rx="2" fill="#070707"/>
+      <rect y="16.0001" width="32" height="4" rx="2" fill="#070707"/>
+    </svg>      
+  </button>
+
+
+
+  
+  <div class="mobile-header">
+   
+       
+    <div class="mobile-header__container">
+      <button type="button" class="mobile-header__btn_close">
+        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3.37256" width="32" height="4" rx="2" transform="rotate(45 3.37256 0)" fill="#070707"/>
+          <rect x="0.543945" y="22.6289" width="32" height="4" rx="2" transform="rotate(-45 0.543945 22.6289)" fill="#070707"/>
+          </svg>          
+      </button>
+      <ul class="mobile-header__nav">
+        <li class="nav__item">
+          <a href="/" class="nav__link nav__link_active">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="../../pages/blog/index.html" class="nav__link">My blog</a>
+        </li>
+        <li class="nav__item">
+          <button class="nav__button_js nav__link ">Sign in</button>
+        </li>
+        <li class="nav__item">
+          <button class="nav__btn_js nav__link">Register</button>
+          </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="blog container">
+        <h1 class="blog__title">My blog</h1>
+        <form action="https://echo.htmlacademy.ru" method="POST" class="form-blog">
+    <div class="form-blog__wrapper">
+        <fieldset class="form-blog__field">
+            <legend class="form-blog__legend" >Tags</legend>
+            <div class="form-blog__tags"></div>
+        </fieldset>
+         <fieldset class="form-blog__field">
+            <legend class="form-blog__legend">Views</legend>
+            <ul class="form-blog__views-list">
+                <li class="form-blog__views-item">
+                    <input type="radio" id="radio-1" name="views" value="100-500" class="form-blog__input visually-hidden">
+                    <label for="radio-1" class="form-blog__label">100-500</label>
+                </li>
+                <li class="form-blog__views-item">
+                    <input type="radio" id="radio-2" name="views" value="500-1000" class="form-blog__input visually-hidden">
+                    <label for="radio-2" class="form-blog__label">500-1000</label>
+                </li>
+                <li class="form-blog__views-item">
+                    <input type="radio" id="radio-3" name="views" value="1000-2000" class="form-blog__input visually-hidden">
+                    <label for="radio-3" class="form-blog__label">1000-2000</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="form-blog__field">
+            <legend class="form-blog__legend">Comments</legend>
+            <ul class="form-blog__comments-list">
+                <li class="form-blog__comments-item">
+                    <input name="selectOf" type="checkbox" id="checkbox-9" value="0" class="form-blog__input visually-hidden">
+                    <label for="checkbox-9" class="form-blog__label">0</label>
+                </li>
+                <li class="form-blog__comments-item">
+                    <input name="selectOf" type="checkbox" id="checkbox-10" value="0-1" class="form-blog__input visually-hidden">
+                    <label for="checkbox-10" class="form-blog__label">0-1</label>
+                </li>
+                <li class="form-blog__comments-item">
+                    <input name="selectOf" type="checkbox" id="checkbox-11" value="1-50" class="form-blog__input visually-hidden">
+                    <label for="checkbox-11" class="form-blog__label">1-50</label>
+                </li>
+
+            </ul>
+        </fieldset>
+        <fieldset class="form-blog__field">
+            <legend class="form-blog__legend">How show?</legend>
+            <ul class="form-blog__show-list">
+                <li class="form-blog__show-item">
+                    <input type="radio" id="radio-s5" name="show" value="show-5" class="form-blog__input visually-hidden">
+                    <label for="radio-s5" class="form-blog__label">show 5</label>
+               </li>
+                <li class="form-blog__show-item">
+                    <input type="radio" id="radio-s10" name="show" value="show-10" class="form-blog__input visually-hidden">
+                    <label for="radio-s10" class="form-blog__label">show 10</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="form-blog__field">
+            <legend class="form-blog__legend">Sort by</legend>
+            <ul class="form-blog__sort-list">
+                <li class="form-blog__sort-item">
+                    <input type="radio" id="radio-date" name="sorting" value="date" class="form-blog__input visually-hidden">
+                    <label for="radio-date" class="form-blog__label">date</label>
+                </li>
+                <li class="form-blog__sort-item">
+                    <input type="radio" id="radio-title" name="sorting" value="title" class="form-blog__input visually-hidden">
+                    <label for="radio-title" class="form-blog__label">title</label>
+                </li>
+                <li class="form-blog__sort-item">
+                    <input type="radio" id="radio-views" name="sorting" value="views" class="form-blog__input visually-hidden">
+                    <label for="radio-views" class="form-blog__label">views</label>
+                </li>
+            </ul>
+        </fieldset>
+        <div class="from-blog__wrap">
+            <span class="form-blog__txt">reset form</span>
+            <button type="reset"  class="form-blog__button">Reset</button>
+        </div>
+        
+    </div>
+    <fieldset class="form-blog__field">
+        <input type="search" name="search" id="search" class="form-blog__input">
+        <label for="search" aria-label="Search"></label>
+        <button type="submit" class="form-blog__button">Search</button>
+    </fieldset>
+</form>
+        <section class="blog__post">
+<h2 class="visually-hidden">Posts</h2>
+    <ul class="blog__post-list">
+        <li class="post">
+    <img src="/static/images/blog/Post-image1.jpg" class="post__img" alt="@@alt">
+    <div class="post__wrapper">
+        <div class="post__tags"></div>
+      <div class="post-wrap">
+          <span class="post__date">20.01.2020</span>          
+          <span class="post__views">223 views</span>
+          <span class="post__comments">97 comments</span>
+      </div>  
+      <h3 class="post__title">This is my new dog.</h5>
+      <p class="post__text">Duis sit odio dui pretium suspendisse malesuada sit leo in. Massa nec eget etiam tellus ac. Sodales nibh pellentesque donec eu ultrices tortor condimentum massa.</p>
+      <a href="#" class="post__link">@@link</a>
+    </div>
+  </li> 
+    </ul>
+</section> 
+        <div class="pagination pagination_js">
+    <button class="pagination__control pagination__control_back"  aria-label="go to the previous page">
+        <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="12.5791" y="23.6992" width="16.5512" height="3" rx="1.5" transform="rotate(-135 12.5791 23.6992)" fill="#070707"/>
+        <rect x="14.7002" y="2.41992" width="16.5512" height="3" rx="1.5" transform="rotate(135 14.7002 2.41992)" fill="#070707"/>
+        </svg>
+    </button>
+    <ul class="pagination__list">
+        <li class="pagination__item">
+            <a href="#" class="pagination__link link_js pagination__link_active">1</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link link_js">2</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link link_js">3</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link link_js">4</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link link_js">5</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link link_js">6</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link link_js">7</a>
+        </li>
+        <li class="pagination__item">
+            <a href="#" class="pagination__link link_js">8</a>
+        </li>
+    </ul>
+    <button class="pagination__control pagination__control_forward"  aria-label="go to the next page">
+        <svg class="pagination__svg" width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2.4209" y="0.300781" width="16.5512" height="3" rx="1.5" transform="rotate(45 2.4209 0.300781)" fill="#070707"/>
+        <rect x="0.299805" y="21.5801" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.299805 21.5801)" fill="#070707"/>
+        </svg>                             
+    </button>
+</div> 
+      </section>
+    </main>
+    <footer class="footer container">
+    <h1 class="footer__title">Contacts</h1>
+    <p class="footer__desc">Want to know more or just chat? 
+      You are welcome!</p>
+      <button class="footer__button footer__button_js">Send message</button>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">Instagram</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">Vk</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">Telegram</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">Mail</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">GitHub</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#" class="footer__social-link">Phone</a>
+        </li>
+      </ul>
+      <div class="footer__wrap">
+        <p class="footer__text">Design by</p>
+        <a href="#" class="footer__link footer__text">DL Academy</a>
+      </div>
+      <p class="footer__text">Program code from Antonina</p>
+</footer>
+
+    <button class="button-to-top button-to-top_hidden" type="button">
+    <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.300781" y="12.5786" width="16.5512" height="3" rx="1.5" transform="rotate(-45 0.300781 12.5786)" fill="#070707"/>
+        <rect x="21.5801" y="14.7" width="16.5512" height="3" rx="1.5" transform="rotate(-135 21.5801 14.7)" fill="#070707"/>
+    </svg>    
+</button>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+  
